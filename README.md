@@ -26,8 +26,9 @@ pip install -r requirements.txt
 
 
 ### Create a .env file in the root directory and add your Pinecone & openai credentials as follows:
-PINECONE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-OPENAI_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+- PINECONE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+- OPENAI_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 # run the following command to store embeddings to pinecone
 python store_index.py
@@ -44,11 +45,11 @@ open up localhost:
 
 ### Techstack Used:
 
-Python
-LangChain
-Flask
-GPT
-Pinecone
+- Python
+- LangChain
+- Flask
+- GPT
+- Pinecone
 
 
 #### AWS-CICD-Deployment-with-Github-Actions
@@ -76,7 +77,6 @@ Pinecone
 # Policy:
 
 1. AmazonEC2ContainerRegistryFullAccess
-
 2. AmazonEC2FullAccess
 3. Create ECR repo to store/save docker image
 - Save the URI: 315865595366.dkr.ecr.us-east-1.amazonaws.com/medibot
@@ -104,9 +104,14 @@ setting>actions>runner>new self hosted runner> choose os> then run command one b
 
 
 # 7. Setup github secrets:
-AWS_ACCESS_KEY_ID
-AWS_SECRET_ACCESS_KEY
-AWS_DEFAULT_REGION
-ECR_REPO
-PINECONE_API_KEY
-OPENAI_API_KEY
+- AWS_ACCESS_KEY_ID
+
+- AWS_SECRET_ACCESS_KEY
+
+- AWS_DEFAULT_REGION
+
+- ECR_REPO
+
+- PINECONE_API_KEY
+
+- OPENAI_API_KEY
